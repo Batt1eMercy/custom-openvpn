@@ -22,7 +22,6 @@ class OVpn():
 
                         configGet = keyring.get_password("ovpn_config","config")
                         configPath = configGet.replace("\\","\\\\")
-                        print(configPath)
 
                         credGet = keyring.get_credential("ovpn_cred","")
 
