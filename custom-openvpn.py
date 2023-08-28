@@ -32,8 +32,7 @@ class OVpn():
                         th.start()
                         openvpnCmd = subprocess.run(f"{OPENVPNPATH} \
                                                     --config \"{configPath}\" \
-                                                    --auth-user-pass \"{cwd}\\cred.txt\"",
-                                                    timeout = 30, stdin=subprocess.PIPE)
+                                                    --auth-user-pass \"{cwd}\\cred.txt\"", stdin=subprocess.PIPE)
  
                 except Exception as err:
                         os.remove(f"{cwd}\\cred.txt")
