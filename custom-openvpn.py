@@ -28,7 +28,7 @@ class OVpn():
 
                         with open(f"{cwd}\\cred.txt", "w") as credFile:
                                 credFile.write(f"{credGet.username}\n{credGet.password}")
-                        th = threading.Timer(0.01, rem_cred_file)
+                        th = threading.Timer(0.1, rem_cred_file)
                         th.start()
                         openvpnCmd = subprocess.run(f"{OPENVPNPATH} \
                                                     --config \"{configPath}\" \
