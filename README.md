@@ -3,7 +3,7 @@
   
 Как пользоваться:
 * Установить зависимости ```pip install -r requirements.txt```
-* Выполнить ```pyinstaller .\custom-openvpn.py```
+* Выполнить ```pyinstaller --onefile .\custom-openvpn.py```
 * Сделать ярлык на ```.\dist\main\custom-openvpn.exe```
 * Поместить ярлык на рабочий стол
 * Зайти в свойства ярлыка > дополнительно > установить "Запуск от имени администратора"
